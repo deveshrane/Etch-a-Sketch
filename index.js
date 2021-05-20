@@ -22,7 +22,7 @@ function etchASketch() {
     randColor();
     container.addEventListener('mouseover', function (event) {
         event.target.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
-        container.style.tbackgroundColor = "white";
+        container.style.backgroundColor = "white";
         randColor();
     }, false);
 }
@@ -33,7 +33,7 @@ btn.addEventListener('click', () => {
     }
     val = prompt("Enter the value of grid square you want.");
     if (!(val >= 2 && val <= 64)) {
-        alert('Value should be from 0 to 64');
+        alert('Value should be from 0 to 63');
     }
     defaultBoxMaker();
 }, false);
