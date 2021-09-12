@@ -33,7 +33,7 @@ btn.addEventListener('click', () => {
     }
     val = prompt("Enter the value of grid square you want.");
     if (!(val >= 2 && val <= 64)) {
-        alert('Value should be from 0 to 63');
+        alert('Value should be from 2 to 63');
     }
     defaultBoxMaker();
 }, false);
